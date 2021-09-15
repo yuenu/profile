@@ -13,6 +13,8 @@
 html, body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body * {
@@ -300,9 +302,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  gap: 10px;
   background-color: var(--previewShadow);
 }
 
@@ -312,6 +312,12 @@ h6 {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+}
+
+.social-links a svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--mainText);
 }
 
 #cover-img {
@@ -327,18 +333,37 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .post {
   border: 1px solid var(--borderColor);
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
 .post:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 1px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+.post-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.post-tag {
+  font-size: 10px;
+  background-color: #b6b6b6;
+  color: #24292e;
+  border-radius: 10px;
+  padding: 0 5px;
 }
 
 .thumbnail {
@@ -397,6 +422,12 @@ h6 {
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
+  }
+  #skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
