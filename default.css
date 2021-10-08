@@ -359,11 +359,11 @@ h6 {
 }
 
 .post-tag {
-  font-size: 10px;
+  font-size: 11px;
   background-color: #b6b6b6;
   color: #24292e;
   border-radius: 10px;
-  padding: 0 5px;
+  padding: 2px 5px;
 }
 
 .thumbnail {
