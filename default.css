@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
+
 :root {
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
@@ -31,7 +33,7 @@ h5,
 h6,
 strong {
   color: var(--mainText);
-  font-family: "Russo One", sans-serif;
+  font-family: "Russo One", "Noto Sans TC", sans-serif;
   font-weight: 500;
 }
 
@@ -43,7 +45,7 @@ input,
 textarea,
 div {
   color: var(--mainText);
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", "Noto Sans TC", monospace;
 }
 
 a {
